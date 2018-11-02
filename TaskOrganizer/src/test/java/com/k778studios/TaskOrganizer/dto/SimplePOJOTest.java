@@ -17,7 +17,7 @@ public class SimplePOJOTest {
 	@Test
 	public void shouldSetAndGetAllFields()
 	{
-		String name = "";
+		String name = "Test";
 		int age = 20;
 		int yearsOfExperience = 3;
 		
