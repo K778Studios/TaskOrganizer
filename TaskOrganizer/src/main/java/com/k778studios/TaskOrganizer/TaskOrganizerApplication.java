@@ -8,6 +8,5 @@ public class TaskOrganizerApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TaskOrganizerApplication.class, args);
-		System.out.println("Hello World");
 	}
 }
