@@ -1,14 +1,21 @@
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <title>Task Organizer Home</title>
+<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
+	rel="stylesheet"
+>
 </head>
+
+
 
 <body background="/images/TaskOrganizerBackground.png">
 
-	<div>
-		<input />
+	<div class="container">
+		<div th:replace="common/header.html :: #headerDiv"></div>
 		<div>
 			<p>Home Page</p>
+
+			<input /> <a class="btn btn-default">Add a Todo</a>
 		</div>
 	</div>
 
