@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class SimpleController {
 
-	@RequestMapping({"/", ""})
+	@RequestMapping("/simplePage")
 	public String getIndexPage(Model model)
 	{
 		
