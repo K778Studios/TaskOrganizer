@@ -17,19 +17,19 @@ import org.springframework.web.context.WebApplicationContext;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
-public class SimpleControllerTest {
-
-	private MockMvc mockMvc;
+public class HomeControllerTest {
+	
+private MockMvc mockMvc;
 	
 	@Mock
-	private SimpleController simpleController;
+	private HomeController homeController;
 	
 	@Autowired
     private WebApplicationContext wac;
 	
 	@Before
     public void setup() {
-		simpleController = new SimpleController();
+		homeController = new HomeController();
         this.mockMvc = MockMvcBuilders.webAppContextSetup(this.wac).build();
     }
 	
@@ -39,5 +39,5 @@ public class SimpleControllerTest {
 		// TODO create unit test here
 		mockMvc.perform(MockMvcRequestBuilders.get("/")).andExpect(MockMvcResultMatchers.status().isOk());
 	}
-	
+
 }
